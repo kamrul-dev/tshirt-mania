@@ -37,6 +37,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
             </div>}
             {command}
             {cart.length !==4 ? <p>Keep Adding</p> : <button>Remove All</button>}
+            {cart.length === 4 && <button className='orange'>Review Order</button>}
         </div>
     );
 };
