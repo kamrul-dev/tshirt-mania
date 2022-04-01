@@ -5,8 +5,8 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
     // Conditional rendering options
     // 1. Element variable
     // 2. Ternary operator condition ? true : false
-    // 3. && operator (Shorthand)
-    // 4. || operator (Shorthand)
+    // 3. && operator (Shorthand) [if condition is true]
+    // 4. || operator (Shorthand) [if condition is false]
 
     let command;
     if(cart.length === 0){
