@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Myself = () => {
+const Myself = ({house}) => {
     return (
         <div>
-            <h4>Me</h4>
+            <h5>Myself</h5>
+            <p><small>House: {house}</small></p>
         </div>
     );
 };
