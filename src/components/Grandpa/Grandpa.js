@@ -14,6 +14,8 @@ import './Grandpa.css';
     7. useContext hook and you will you need to pass the contextName
  
  */
+//Context API and introduction to react dev tool
+
 export const RingContext = createContext('ring');
 
 const Grandpa = () => {
