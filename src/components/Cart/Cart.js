@@ -6,6 +6,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
     // 1. Element variable
     // 2. Ternary operator condition ? true : false
     // 3. && operator (Shorthand)
+    // 4. || operator (Shorthand)
 
     let command;
     if(cart.length === 0){
@@ -29,6 +30,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
                     <button onClick={() => handleRemoveFromCart(tShirt)} >X</button>
                 </p>)
             }
+            {cart.length === 0 ||<p className='orange'>Yah! You are buying</p>}
             {cart.length === 3 && <div className='orange'>
                 <h3>Trigonal</h3>
                 <p>Three items for gift</p>
