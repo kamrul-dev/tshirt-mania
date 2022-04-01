@@ -4,6 +4,7 @@ import './Cart.css';
 const Cart = ({ cart, handleRemoveFromCart }) => {
     // Conditional rendering options
     // 1. Element variable
+    // 2. Ternary operator condition ? true : false
 
     let command;
     if(cart.length === 0){
@@ -28,6 +29,7 @@ const Cart = ({ cart, handleRemoveFromCart }) => {
                 </p>)
             }
             {command}
+            {cart.length !==4 ? <p>Keep Adding</p> : <button>Remove All</button>}
         </div>
     );
 };
